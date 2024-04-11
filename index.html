@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to J and J Canteen</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/2e2a04f4b3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class ="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class ="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="redirection/403.html">PROJECT</a></li>
+                    <li><a href="redirection/403.html">MENU</a></li>
+                    <li><a href="redirection/403.html">ABOUT US</a></li>
+                    <li><a href="contactus/contactus.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Joren and Jhercie's Canteen</h1>
+            <p>Making a website is now easiest thing in the wordl. you just need to learn HTML ,CSS ,<br>Javascript and you're good to go!</p>
+            <a href="" class="hero-btn">Visit us to know more</a>
+        </div>
+    </section>
+
+    <!--   MENU  -->
+
+
+    <section class ="menu">
+        <h1>Menu We Offer</h1>
+        <p>There are several types of menu we offer depending on time and trip</p>
+
+        <div class="row">
+            <div class="menu-col">
+                <h3>Breakfast</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+                 </div>
+            <div class="menu-col">
+                <h3>Lunch</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+                </div>
+            <div class="menu-col">
+                <h3>Dinner</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+            </div>
+        </div>
+    </section>
+
+<!--   LOCATION  -->
+    <section class ="location">
+        <h1>Where Do We Serve</h1>
+        <p>We already serve 4 sites from 2013 until now</p>
+
+        <div class="row">
+            <div class="loc-col">
+                <img src="images\ro.jpg" alt="">  
+                <div class="layer">
+                    <h3>Rochester</h3>
+                </div>  
+            </div>
+            <div class="loc-col">
+                <img src="images\circ.jpg" alt="">  
+                <div class="layer">
+                    <h3>Circulo Verde</h3>
+                </div>  
+            </div>
+            <div class="loc-col">
+                <img src="images\maple.jpg" alt="">  
+                    <div class="layer"> 
+                        <h3>Maple at Verdant Towers</h3>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!--FEEDBACK-->
+    <section class = "feedback">
+        <h1>What our Customers Says</h1>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+               
+        <div class ="row">
+            <div class="feedback-col">
+                <img src ="user.png">
+                <div>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+                    <h3>Dark Herras</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="feedback-col">
+                <img src ="user.png">
+                <div>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+                    <h3>Aljur Abrenigga</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!--ContactUs-->
+
+<section class="cta">
+    <h1>Let's Start A New Project With <br>Nicely Done Food Everyday</h1>
+    <a href="contactus/contactus.html" class="hero-btn">CONTACT US</a>
+</section>
+
+<!--Footer-->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.<br> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+</section>
+
+
+
+
+<script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right= "0px";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-150px"
+        }
+</script>
+    
+</body>
+</html>
